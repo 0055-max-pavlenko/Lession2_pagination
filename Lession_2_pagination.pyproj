@@ -4,6 +4,8 @@
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <Name>Lession_2_pagination</Name>
     <RootNamespace>Lession_2_pagination</RootNamespace>
+    <SuppressEnvironmentCreationPrompt>True</SuppressEnvironmentCreationPrompt>
+    <SuppressConfigureTestFrameworkPrompt>true</SuppressConfigureTestFrameworkPrompt>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -41,6 +43,16 @@
     <Compile Include="Lession_2_pagination\settings.py" />
     <Compile Include="Lession_2_pagination\urls.py" />
     <Compile Include="Lession_2_pagination\wsgi.py" />
+    <Compile Include="stations\admin.py" />
+    <Compile Include="stations\apps.py" />
+    <Compile Include="stations\migrations\__init__.py" />
+    <Compile Include="stations\models.py" />
+    <Compile Include="stations\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="stations\tests.py" />
+    <Compile Include="stations\views.py" />
+    <Compile Include="stations\__init__.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\" />
@@ -53,6 +65,12 @@
     <Folder Include="app\templates\" />
     <Folder Include="app\templates\app\" />
     <Folder Include="Lession_2_pagination\" />
+    <Folder Include="stations\" />
+    <Folder Include="stations\assets\css\" />
+    <Folder Include="stations\migrations\" />
+    <Folder Include="stations\assets\" />
+    <Folder Include="stations\templates\" />
+    <Folder Include="stations\templates\stations\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />
@@ -85,6 +103,7 @@
     <Content Include="app\templates\app\layout.html" />
     <Content Include="app\templates\app\login.html" />
     <Content Include="app\templates\app\loginpartial.html" />
+    <Content Include="stations\templates\stations\index.html" />
   </ItemGroup>
   <ItemGroup>
     <None Include="readme.html">
