@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+п»їfrom django.shortcuts import render, redirect
 from django.urls import reverse
 from django.core.paginator import Paginator
 from csv import DictReader
@@ -16,10 +16,9 @@ def index(request):
 
 
 def bus_stations(request):
-    # получите текущую страницу и передайте ее в контекст
-    # также передайте в контекст список станций на странице
+    # РїРѕР»СѓС‡РёС‚Рµ С‚РµРєСѓС‰СѓСЋ СЃС‚СЂР°РЅРёС†Сѓ Рё РїРµСЂРµРґР°Р№С‚Рµ РµРµ РІ РєРѕРЅС‚РµРєСЃС‚
+    # С‚Р°РєР¶Рµ РїРµСЂРµРґР°Р№С‚Рµ РІ РєРѕРЅС‚РµРєСЃС‚ СЃРїРёСЃРѕРє СЃС‚Р°РЅС†РёР№ РЅР° СЃС‚СЂР°РЅРёС†Рµ
     page_number = int(request.GET.get("page", 1))
-    
     paginator = Paginator(data, 10)
     bus_stations = paginator.get_page(page_number)
 
