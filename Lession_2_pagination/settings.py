@@ -52,7 +52,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'pagination.urls'
+ROOT_URLCONF = 'Lession_2_pagination.urls'
 
 TEMPLATES = [
     {
@@ -70,7 +70,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'pagination.wsgi.application'
+WSGI_APPLICATION = 'Lession_2_pagination.wsgi.application'
 
 
 # Database

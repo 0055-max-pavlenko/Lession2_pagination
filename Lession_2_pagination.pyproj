@@ -11,7 +11,8 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>cad09d3d-f11d-4903-89a4-3df84d5bd201</ProjectGuid>
-    <ProjectHome>.</ProjectHome>
+    <ProjectHome>
+    </ProjectHome>
     <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
     <StartupFile>manage.py</StartupFile>
     <SearchPath>
@@ -64,15 +65,17 @@
     <Folder Include="app\static\app\scripts\" />
     <Folder Include="app\templates\" />
     <Folder Include="app\templates\app\" />
+    <Folder Include="assets\css\" />
     <Folder Include="Lession_2_pagination\" />
+    <Folder Include="assets\" />
     <Folder Include="stations\" />
-    <Folder Include="stations\assets\css\" />
     <Folder Include="stations\migrations\" />
-    <Folder Include="stations\assets\" />
     <Folder Include="stations\templates\" />
     <Folder Include="stations\templates\stations\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\css\normalize.css" />
+    <Content Include="assets\css\skeleton.css" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
     <Content Include="app\static\app\content\bootstrap.css" />
